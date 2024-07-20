@@ -1,26 +1,30 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "lib": ["dom", "dom.iterable", "esnext"], // Подключение библиотек
+    "allowJs": true, // Разрешение использования JavaScript
+    "skipLibCheck": true, // Пропуск проверки типов библиотек
+    "strict": true, // Включение строгого режима TypeScript
+    "noEmit": true, // Запрет на генерацию выходных файлов
+    "esModuleInterop": true, // Совместимость с модулями ES
+    "module": "esnext", // Использование модуля ES Next
+    "moduleResolution": "bundler", // Разрешение модулей с помощью бандлера
+    "resolveJsonModule": true, // Поддержка модулей JSON
+    "isolatedModules": true, // Поддержка изолированных модулей
+    "jsx": "preserve", // Сохранение синтаксиса JSX
+    "incremental": true, // Инкрементальная компиляция
+    "noImplicitAny": true, // Запрет на неявный тип "any"
+    "noFallthroughCasesInSwitch": true, // Запрет на переход между случаями в switch
+    "noUnusedLocals": true, // Запрет на неиспользуемые локальные переменные
+    "noUnusedParameters": true, // Запрет на неиспользуемые параметры
     "plugins": [
       {
-        "name": "next"
+        "name": "next" // Плагин для поддержки Next.js
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"] // Настройка путей для модулей
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"], // Включаемые файлы
+  "exclude": ["node_modules"] // Исключаемые файлы
 }
