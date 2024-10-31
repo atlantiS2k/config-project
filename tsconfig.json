@@ -26,5 +26,5 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"], // Включаемые файлы
-  "exclude": ["node_modules"] // Исключаемые файлы
+  "exclude": ["node_modules"] // Исключаемые файлы //
 }
